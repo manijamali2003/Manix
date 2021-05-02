@@ -15,26 +15,27 @@ void Main()
   for (;;){
     NewLine();
     Print (">> ");
-    char a = ReadInt ();
+    char a = ReadChar ();
+    PrintChar (a);
     NewLine();
     switch (a){
         case '\0':
             Clear();
             break;
-        case 'H':
+        case 'h':
             PrintLine (" Hello Iam Manix kernel");
             break;
-        case 'W':
+        case 'w':
             PrintLine (" Welcome to Manix!");
             break;
-        case 'V':
+        case 'v':
             PrintLine (" Manix v0.0.3 - 1400/02/12");
             break;
-        case 'R':
+        case 'r':
             Reboot();
             break;
         default:
-            PrintLine (" Commands are:\n 1- Hi\n 2- Welcome\n 3- Version\n 4- Reboot");
+            PrintLine (" Commands are:\n h- Hi\n w- Welcome\n v- Version\n r- Reboot");
             break;
     }
   }

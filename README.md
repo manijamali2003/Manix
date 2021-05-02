@@ -5,9 +5,7 @@
 
 1. Edit `kernel.c`
 ```c
-#include "kernel/vga.h"
-#include "kernel/stddef.h"
-#include "kernel/system.h"
+#include "manix.h"
 
 void Main(void){
     Color(BLACK,WHITE);
