@@ -1,0 +1,10 @@
+0.0.1:
+
++ C kernel
++ Add VGA Printers
++ Add Reboot commmand
+
+0.0.2:
+
++ Add Python supporter kernel
++ Add Python kernel library
