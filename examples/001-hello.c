@@ -3,9 +3,10 @@
     Manix (c) 2021 Mani Jamali; Freedom at all
 */
 
-#ifndef K_MANIX_H
-#define k_MANIX_H
+#include "manix.h"
 
-#include "kernel/kernel.c"
-
-#endif
+void Main()
+{
+  Color(BLACK, WHITE);
+  PrintLine (" Hello Manix!");
+}

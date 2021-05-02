@@ -1,3 +1,8 @@
+/*
+    In the name of God, the Compassionate, the Merciful
+    Manix (c) 2021 Mani Jamali; Freedom at all
+*/
+
 #ifndef KERNEL_H
 #define KERNEL_H
 

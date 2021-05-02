@@ -1,3 +1,8 @@
+/*
+    In the name of God, the Compassionate, the Merciful
+    Manix (c) 2021 Mani Jamali; Freedom at all
+*/
+
 #include "kernel.h"
 #include "utils.h"
 #include "char.h"
@@ -309,6 +314,30 @@ int ReadInt()
   }while(ch > 0);
 
   return atoi(data);
+}
+
+char ReadChar()
+{
+  char ch = '\0';
+  char keycode = 0;
+  char data[32];
+  int index = 0;
+  do{
+    keycode = get_input_keycode();
+    if(keycode == KEY_ENTER){
+      data[index] = '\0';
+      NewLine();
+      break;
+    }else{
+      ch = get_ascii_char(keycode);
+      PrintChar(ch);
+      data[index] = ch;
+      index++;
+    }
+    MiniSleep(2000000);
+    //Sleep(CALC_Sleep);
+  }while(ch > 0);
+  return ch;
 }
 
 char getchar()

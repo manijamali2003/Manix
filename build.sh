@@ -1,4 +1,6 @@
 #!/bin/bash
+# In the name of God, the Compassionate, the Merciful
+# Manix (c) 2021 Mani Jamali; Freedom at all
 
 nasm -f elf32 boot.asm -o boot.o
 gcc  -m32  -c  kernel.c  -o  kernel.o  --freestanding

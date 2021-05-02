@@ -15,23 +15,22 @@ void Main()
   for (;;){
     NewLine();
     Print (">> ");
-    char a = ReadChar ();
-    PrintChar (a);
+    int a = ReadInt ();
     NewLine();
     switch (a){
-        case '\0':
+        case 0:
             Clear();
             break;
-        case 'h':
+        case 1:
             PrintLine (" Hello Iam Manix kernel");
             break;
-        case 'w':
+        case 2:
             PrintLine (" Welcome to Manix!");
             break;
-        case 'v':
+        case 3:
             PrintLine (" Manix v0.0.3 - 1400/02/12");
             break;
-        case 'r':
+        case 4:
             Reboot();
             break;
         default:

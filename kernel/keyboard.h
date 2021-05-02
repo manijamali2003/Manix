@@ -1,8 +1,12 @@
+/*
+    In the name of God, the Compassionate, the Merciful
+    Manix (c) 2021 Mani Jamali; Freedom at all
+*/
+
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
 
 #define KEYBOARD_PORT 0x60
-
 
 #define KEY_A 0x1E
 #define KEY_B 0x30
